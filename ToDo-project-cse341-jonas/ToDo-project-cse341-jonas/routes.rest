@@ -1,0 +1,169 @@
+### =========================
+### CATEGORIES
+### =========================
+
+### Get all categories
+GET http://localhost:3000/categories
+
+### Get single category
+GET http://localhost:3000/categories/6a2ca42c1abe44f995c5389b
+
+### Create category
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+  "name": "Work",
+  "description": "Work related tasks",
+  "color": "#3B82F6"
+}
+
+### Update category
+PUT http://localhost:3000/categories/
+Content-Type: application/json
+
+{
+  "name": "Work Updated",
+  "description": "Updated description",
+  "color": "#FF0000"
+}
+
+### Delete category
+DELETE http://localhost:3000/categories/
+
+---
+
+### =========================
+### PROJECTS
+### =========================
+
+### Get all projects
+GET http://localhost:3000/projects
+
+### Get single project
+GET http://localhost:3000/projects/6a2ca4cb1abe44f995c538a2
+
+### Create project
+POST http://localhost:3000/projects
+Content-Type: application/json
+
+{
+  "name": "Backend API",
+  "description": "Project for ToDo App",
+  "status": "In Progress",
+  "categoryId": "6a2ca42c1abe44f995c5389b",
+  "userId": "6a2ca3501abe44f995c53898",
+  "startDate": "2026-06-01",
+  "endDate": "2026-07-01",
+  "createdAt": "2026-06-10",
+  "updatedAt": "2026-06-10"
+}
+
+### Update project
+PUT http://localhost:3000/projects/
+Content-Type: application/json
+
+{
+  "name": "Backend API Updated",
+  "description": "Updated project",
+  "status": "Completed",
+  "categoryId": "6a2ca42c1abe44f995c5389b",
+  "userId": "6a2ca3501abe44f995c53898",
+  "startDate": "2026-06-01",
+  "endDate": "2026-07-10",
+  "createdAt": "2026-06-10",
+  "updatedAt": "2026-06-12"
+}
+
+### Delete project
+DELETE http://localhost:3000/projects/
+
+---
+
+### =========================
+### TASKS
+### =========================
+
+### Get all tasks
+GET http://localhost:3000/tasks
+
+### Get single task
+GET http://localhost:3000/tasks/6a2ca5521abe44f995c538a4
+
+### Create task
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "Implement MongoDB",
+  "description": "Create connection layer",
+  "status": "Pending",
+  "priority": "High",
+  "dueDate": "2026-06-15",
+  "projectId": "",
+  "createdAt": "2026-06-10",
+  "updatedAt": "2026-06-10"
+}
+
+### Update task
+PUT http://localhost:3000/tasks/
+Content-Type: application/json
+
+{
+  "title": "Implement MongoDB Updated",
+  "description": "Improved connection layer",
+  "status": "Completed",
+  "priority": "Medium",
+  "dueDate": "2026-06-20",
+  "projectId": "",
+  "createdAt": "2026-06-10",
+  "updatedAt": "2026-06-12"
+}
+
+### Delete task
+DELETE http://localhost:3000/tasks/
+
+---
+
+### =========================
+### USERS
+### =========================
+
+### Get all users
+GET http://localhost:3000/users
+
+### Get single user
+GET http://localhost:3000/users/6a2ca3501abe44f995c53898
+
+### Create user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "firstName": "Aaron",
+  "lastName": "Mondragon",
+  "email": "aaron@email.com",
+  "role": "user",
+  "phone": "999999999",
+  "city": "Lima",
+  "lastLogin": "2026-06-12",
+  "createdAt": "2026-06-10"
+}
+
+### Update user
+PUT http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "firstName": "Aaron Updated",
+  "lastName": "Mondragon",
+  "email": "aaron@email.com",
+  "role": "admin",
+  "phone": "999999999",
+  "city": "Lima",
+  "lastLogin": "2026-06-13",
+  "createdAt": "2026-06-10"
+}
+
+### Delete user
+DELETE http://localhost:3000/users/
