@@ -5,7 +5,7 @@
     "description": "API for categories and tasks",
     "version": "1.0.0"
   },
-  "host": "todo-project-cse341-83pb.onrender.com",
+  "host": "todo-project-cse341-jonas.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
